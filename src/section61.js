@@ -16,11 +16,20 @@ class User {
         }
     }
 }
+class VipUser extends User {
+    constructor() {
+        super();
+    }
+}
+let vipUser = new VipUser();
+vipUser.addUser(['boy','boy@gmail.com']);
+vipUser.showUser();
 
-let a = new User ();
-a.addUser(['Ploy','a@gmail.com']);
-a.addUser(['Moo','b@gmail.com']);
-a.addUser(['PB','c@gmail.com']);
-a.showUser();
-a.delUser();
-a.showUser();
+
+// let a = new User ();
+// a.addUser(['Ploy','a@gmail.com']);
+// a.addUser(['Moo','b@gmail.com']);
+// a.addUser(['PB','c@gmail.com']);
+// a.showUser();
+// a.delUser();
+// a.showUser();
